@@ -38,13 +38,13 @@ General:
         # The below 4 properties should be either set together, or be unset together. If they are set, then the orderer node uses a separate listener for 
         # intra-cluster communication. If they are unset, then the general orderer listener is used. This is useful if you want to use a different TLS server 
         # certificates on the client-facing and the intra-cluster listeners. ListenPort defines the port on which the cluster listens to connections.
-        ListenPort:
+        ListenPort: 
         # ListenAddress defines the IP on which to listen to intra-cluster communication.
-        ListenAddress:
+        ListenAddress: 
         # ServerCertificate defines the file location of the server TLS certificate used for intra-cluster communication.
-        ServerCertificate: /var/hyperledger/OrdererOrg/tls-msp/signcerts/cert.pem
+        ServerCertificate: 
         # ServerPrivateKey defines the file location of the private key of the TLS certificate.
-        ServerPrivateKey: /var/hyperledger/OrdererOrg/tls-msp/keystore/key.pem
+        ServerPrivateKey: 
     # Keepalive settings for the GRPC server.
     Keepalive:
         # Disconnect the client if the time between pings is less than the specified time
