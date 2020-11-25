@@ -119,7 +119,7 @@ Orderer: &OrdererDefaults
       # a subset of the host:port items enumerated in this list should be
       # replicated under the Orderer.Addresses key above.
       Consenters:
-          - Host: orderer2-ordererorg
+          - Host: orderer1-ordererorg
             Port: 30750
             # Same cert is being used for client and server - for higher level of security you may use different certs
             ClientTLSCert: OrdererOrg/orderer1/tls-cert/cert.pem
