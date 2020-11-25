@@ -91,7 +91,7 @@ Orderer: &OrdererDefaults
 
   Addresses:
     # UPDATE THE IP ADDRESS
-    - healthcare-orderer-clusterip:30750
+    - orderer1-ordererorg:30750
   # Policies for Orderer
   Policies:
     Readers:
@@ -119,18 +119,18 @@ Orderer: &OrdererDefaults
       # a subset of the host:port items enumerated in this list should be
       # replicated under the Orderer.Addresses key above.
       Consenters:
-          - Host: healthcare-orderer-clusterip
+          - Host: orderer2-ordererorg
             Port: 30750
             # Same cert is being used for client and server - for higher level of security you may use different certs
             ClientTLSCert: OrdererOrg/orderer1/tls-cert/cert.pem
             ServerTLSCert: OrdererOrg/orderer1/tls-cert/cert.pem
 
-          - Host: healthcare-orderer-2-clusterip
+          - Host: orderer2-ordererorg
             Port: 31750
             ClientTLSCert: OrdererOrg/orderer2/tls-cert/cert.pem
             ServerTLSCert: OrdererOrg/orderer2/tls-cert/cert.pem            
         
-          - Host: healthcare-orderer-3-clusterip
+          - Host: orderer3-ordererorg
             Port: 32750
             ClientTLSCert: OrdererOrg/orderer3/tls-cert/cert.pem
             ServerTLSCert: OrdererOrg/orderer3/tls-cert/cert.pem   
