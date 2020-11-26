@@ -3,6 +3,8 @@ FROM hyperledger/fabric-orderer:2.3
 LABEL  maintainer="Thach Canh Nhut"
 
 #2. Create the folder for configurations
+RUN rm -r /etc/hyperledger/fabric
+
 RUN mkdir -p /var/hyperledger/OrdererOrg
 
 ENV FABRIC_CFG_PATH=/var/hyperledger/OrdererOrg
