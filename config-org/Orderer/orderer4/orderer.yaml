@@ -25,7 +25,7 @@ General:
     # Listen address: The IP on which to bind to listen.
     ListenAddress: 0.0.0.0
     # Listen port: The port on which to bind to listen.
-    ListenPort: 32750
+    ListenPort: 32570
     # Used orderer type = etcdraft
     Cluster:
         # SendBufferSize is the maximum number of messages in the egress buffer. Consensus messages are dropped if the buffer is full, and transaction messages 
